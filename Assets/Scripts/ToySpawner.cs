@@ -12,12 +12,13 @@ public class ToySpawner : MonoBehaviour
     public GameObject toyTemplate; // Boş bir GameObject, tüm oyuncaklar buradan türetilecek
     public float upwardForce = 5f; // Yukarı uygulanan kuvvet
 
-    void Start()
+    /*void Start()
     {
         InvokeRepeating("SpawnToy", wait, wait);
     }
+    */
 
-    void SpawnToy()
+    public void SpawnToy(Vector3 spawnPosition)
     {
         // İyi veya kötü oyuncağı seç
         bool isGoodToy = Random.value < goodToyChance;
@@ -38,7 +39,8 @@ public class ToySpawner : MonoBehaviour
         }
 
         // Yeni bir oyuncak oluştur ve ScriptableObject özelliklerini ata
-        GameObject newToy = Instantiate(toyTemplate, new Vector3(Random.Range(-10, 10), 10, 0), Quaternion.identity);
+        //GameObject newToy = Instantiate(toyTemplate, new Vector3(Random.Range(-10, 10), 10, 0), Quaternion.identity);
+        GameObject newToy = Instantiate(toyTemplate, spawnPosition, Quaternion.identity);
 
         // Sprite'ı ve fiziksel özellikleri ayarla
         SpriteRenderer sr = newToy.GetComponent<SpriteRenderer>();
