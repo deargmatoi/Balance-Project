@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 111516560}
   - component: {fileID: 111516562}
   - component: {fileID: 111516561}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Character (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,8 +274,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1547091337
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -569,6 +569,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: elf tek kare
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 8dfe9428fa7175b4b8417b72ffb616e4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 8dfe9428fa7175b4b8417b72ffb616e4, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 8dfe9428fa7175b4b8417b72ffb616e4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1547091337
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 8dfe9428fa7175b4b8417b72ffb616e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -769,6 +781,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: balance gaming bakcground
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 488c5a99a3bcea74a85063c5f09e4b91, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 488c5a99a3bcea74a85063c5f09e4b91, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 488c5a99a3bcea74a85063c5f09e4b91, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 488c5a99a3bcea74a85063c5f09e4b91, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.31
@@ -783,11 +807,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 488c5a99a3bcea74a85063c5f09e4b91, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 488c5a99a3bcea74a85063c5f09e4b91, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -3.62
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 488c5a99a3bcea74a85063c5f09e4b91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -925,7 +949,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000089bd365c
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -6047,6 +6071,18 @@ PrefabInstance:
     - target: {fileID: -2253911629886400664, guid: f93c5a7a51122c746a120f4e17642313, type: 3}
       propertyPath: m_Name
       value: final tepsi
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: f93c5a7a51122c746a120f4e17642313, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: f93c5a7a51122c746a120f4e17642313, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: f93c5a7a51122c746a120f4e17642313, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1547091337
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f93c5a7a51122c746a120f4e17642313, type: 3}
       propertyPath: m_LocalScale.x
