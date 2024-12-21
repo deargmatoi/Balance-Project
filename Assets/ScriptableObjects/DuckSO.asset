@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toyName: Duck
   sprite: {fileID: 21300000, guid: d0c6c6e90e91ca7489551ab11503ed75, type: 3}
-  mass: 2
+  mass: 4
   isGoodToy: 1

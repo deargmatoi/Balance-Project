@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toyName: Grenade
   sprite: {fileID: 21300000, guid: 86823f33f641cd148af1af0c2bef7b3f, type: 3}
-  mass: 2
+  mass: 5
   isGoodToy: 0
