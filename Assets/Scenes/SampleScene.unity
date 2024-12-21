@@ -597,6 +597,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &582437888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 582437890}
+  - component: {fileID: 582437889}
+  m_Layer: 0
+  m_Name: ToySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &582437889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582437888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf5d393e068bd4469211f3cf928b8fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goodToys:
+  - {fileID: 11400000, guid: 7f09c1ce6dec98e4f98553300eaa5c10, type: 2}
+  - {fileID: 11400000, guid: fdc82516aa3768046a6740e4a128a3d9, type: 2}
+  - {fileID: 11400000, guid: bf216acfd8323d146b54aea9bcff23d9, type: 2}
+  - {fileID: 11400000, guid: e2de8fd31d68ca54e8f8d506589a142a, type: 2}
+  - {fileID: 11400000, guid: e5e080d78c3029a4cad02bc15765cbed, type: 2}
+  badToys:
+  - {fileID: 11400000, guid: 3a1c63e1e60c3954bb128d41782daaf3, type: 2}
+  - {fileID: 11400000, guid: 48d0d781d3ccdac4e81e73521c5611d6, type: 2}
+  - {fileID: 11400000, guid: 72fa214de6ac19d4da558ba301b31b9f, type: 2}
+  - {fileID: 11400000, guid: 328a981db3c52b24b98c1deb067e3212, type: 2}
+  goodToyChance: 0.5
+  toyTemplate: {fileID: 2296933270536001185, guid: 6c9b1559f27abc446a6cfe3c1b7c0ef9, type: 3}
+  upwardForce: 20
+--- !u!4 &582437890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582437888}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.89966464, y: -0.23281766, z: 0.022958688}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,7 +751,7 @@ GameObject:
   - component: {fileID: 755733632}
   m_Layer: 4
   m_Name: Zemin
-  m_TagString: Untagged
+  m_TagString: Zemin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -846,7 +904,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116128315}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c02e872629f10d14fa793f7a294663e5, type: 3}
   m_Name: 
@@ -1363,3 +1421,4 @@ SceneRoots:
   - {fileID: 111516559}
   - {fileID: 755733631}
   - {fileID: 1116128317}
+  - {fileID: 582437890}
