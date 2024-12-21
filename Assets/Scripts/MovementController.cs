@@ -7,7 +7,7 @@ public class MovementController : MonoBehaviour
     public float moveSpeed = 5f; // X ekseni hareket hızı
     public float rotationSpeed = 100f; // Daire dönüş hızı
 
-    private Animator animator;
+    [SerializeField] private Animator animator;
 
     [SerializeField] private GameObject elf;
 
@@ -18,13 +18,20 @@ public class MovementController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        animator = elf.gameObject.GetComponent<Animator>();
+        //animator = elf.gameObject.GetComponent<Animator>();
     }
 
     void Update()
     {
         // A ve D tuşlarıyla bütün şeklin sağa-sola hareketi
         float move = Input.GetAxis("Horizontal"); // A ve D tuşları için -1 ve 1 döner
+        if(rb.velocity.x != 0)
+        {
+            animator.SetBool("isMoving", true);
+        } else
+        {
+            animator.SetBool("isMoving", false);
+        }
         rb.velocity = new Vector2(move * moveSpeed, rb.velocity.y);
 
         // Sağ ve sol ok tuşlarıyla dairenin kendi etrafında dönmesi
@@ -46,7 +53,7 @@ public class MovementController : MonoBehaviour
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
 
         // Speed parametresini güncelle
-        animator.SetFloat("Speed", Mathf.Abs(moveInput));
+        //animator.SetFloat("Speed", Mathf.Abs(moveInput));
 
         // Karakteri sağa sola döndürme
         if (moveInput > 0)

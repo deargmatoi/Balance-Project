@@ -236,6 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rotationSpeed: 150
+  animator: {fileID: 1018032687}
   elf: {fileID: 1018032682}
 --- !u!212 &111516558
 SpriteRenderer:
@@ -531,6 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rotationSpeed: 100
+  animator: {fileID: 0}
   elf: {fileID: 0}
 --- !u!50 &141712114
 Rigidbody2D:
