@@ -7,11 +7,18 @@ public class MovementController : MonoBehaviour
     public float moveSpeed = 5f; // X ekseni hareket hızı
     public float rotationSpeed = 100f; // Daire dönüş hızı
 
+    private Animator animator;
+
+    [SerializeField] private GameObject elf;
+
+
     private Rigidbody2D rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        animator = elf.gameObject.GetComponent<Animator>();
     }
 
     void Update()
@@ -33,5 +40,19 @@ public class MovementController : MonoBehaviour
         {
             rb.angularVelocity = 0; // Ok tuşlarına basılmadığında dönmeyi durdur
         }
+
+        // Yatay hareket
+        float moveInput = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+
+        // Speed parametresini güncelle
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
+
+        // Karakteri sağa sola döndürme
+        if (moveInput > 0)
+            transform.localScale = new Vector3(1, 1, 1);
+        else if (moveInput < 0)
+            transform.localScale = new Vector3(-1, 1, 1);
     }
 }
+
