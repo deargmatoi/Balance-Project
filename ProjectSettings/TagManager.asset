@@ -4,9 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< Updated upstream
   - StickyObject
   - Tray
   - Stickable
+=======
+  - Platform
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
