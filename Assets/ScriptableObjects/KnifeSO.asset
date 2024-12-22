@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toyName: Knife
   sprite: {fileID: 21300000, guid: 47c079ca212ddf14fa6682143d23cab5, type: 3}
-  mass: 1
+  mass: 1.8
   isGoodToy: 0

@@ -6117,7 +6117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallingObject: {fileID: 0}
   character: {fileID: 689900783}
-  spawnOffset: 1.5
+  spawnOffset: 0
   redBlockChance: 0.3
   specialShapeChance: 0.2
   upwardForce: 5
@@ -6795,7 +6795,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -6840,7 +6840,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
