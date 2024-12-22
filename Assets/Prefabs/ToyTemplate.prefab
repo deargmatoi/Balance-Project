@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8603528563107764738}
   - component: {fileID: 2959720889831910627}
   - component: {fileID: 719056031907296657}
+  - component: {fileID: -36194773572734671}
   m_Layer: 0
   m_Name: ToyTemplate
   m_TagString: Untagged
@@ -171,3 +172,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6decfc1a1f521145adaadea1deae001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-36194773572734671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2296933270536001185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59d468d76793fd847be373d1e7382cb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toy: {fileID: 0}
