@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ToySpawner : MonoBehaviour
 {
-    float wait = 2.1f;
     public List<ToyObject> goodToys;
     public List<ToyObject> badToys;
 
