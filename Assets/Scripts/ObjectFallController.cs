@@ -16,6 +16,8 @@ public class ObjectFallController : MonoBehaviour
     public float characterMoveSpeed = 5f; // Karakterin hareket hızı
 
     private Vector3 nextBlockPosition; // Bir sonraki blok pozisyonu
+    
+    [SerializeField] private Animator animator;
 
     public ToySpawner toySpawner;
 
@@ -36,7 +38,6 @@ public class ObjectFallController : MonoBehaviour
         // Eğer karakter hedef pozisyona ulaşmışsa blok oluştur
         if (Vector3.Distance(character.position, nextBlockPosition) < 0.1f)
         {
-            
             // Yeni blok pozisyonu hesapla
             nextBlockPosition = GetRandomBlockPosition();
 
@@ -44,10 +45,13 @@ public class ObjectFallController : MonoBehaviour
             float randomOffset = Random.Range(-spawnOffset, spawnOffset); // Karakterin sağ ve sol yanına rasgele offset
             Vector3 spawnPosition = new Vector3(character.position.x + randomOffset, character.position.y, 0);
 
+            // Oyuncak spawnlama işlemi
             toySpawner.SpawnToy(spawnPosition);
 
-            /*
+            // Animator'deki "Spawn" trigger'ını tetikle
+            animator.SetTrigger("Spawn");
 
+            /*
             // Yeni blok oluştur
             GameObject block = Instantiate(fallingObject, spawnPosition, Quaternion.identity);
 
